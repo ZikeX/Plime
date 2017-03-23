@@ -15,6 +15,12 @@
 		63A1FD2F1E82D8BE00AEFB12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63A1FD2D1E82D8BE00AEFB12 /* LaunchScreen.storyboard */; };
 		63A1FD3A1E82D8BE00AEFB12 /* PlimeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A1FD391E82D8BE00AEFB12 /* PlimeTests.m */; };
 		63A1FD451E82D8BF00AEFB12 /* PlimeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A1FD441E82D8BF00AEFB12 /* PlimeUITests.m */; };
+		63A1FD5B1E83A1CF00AEFB12 /* MPTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A1FD5A1E83A1CF00AEFB12 /* MPTabBarController.m */; settings = {ASSET_TAGS = (); }; };
+		63A1FD5E1E83A78900AEFB12 /* MPNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A1FD5D1E83A78900AEFB12 /* MPNavigationController.m */; settings = {ASSET_TAGS = (); }; };
+		63A1FD631E83B44300AEFB12 /* UIView+MExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A1FD621E83B44300AEFB12 /* UIView+MExtension.m */; settings = {ASSET_TAGS = (); }; };
+		63A1FD691E83BC5600AEFB12 /* MPFeedController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A1FD681E83BC5600AEFB12 /* MPFeedController.m */; settings = {ASSET_TAGS = (); }; };
+		63A1FD6D1E83CF3700AEFB12 /* MPSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A1FD6C1E83CF3700AEFB12 /* MPSearchController.m */; settings = {ASSET_TAGS = (); }; };
+		63A1FD711E83D11100AEFB12 /* UISearchBar+MAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A1FD701E83D11100AEFB12 /* UISearchBar+MAdd.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,19 @@
 		63A1FD401E82D8BE00AEFB12 /* PlimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		63A1FD441E82D8BF00AEFB12 /* PlimeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlimeUITests.m; sourceTree = "<group>"; };
 		63A1FD461E82D8BF00AEFB12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63A1FD591E83A1CF00AEFB12 /* MPTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPTabBarController.h; sourceTree = "<group>"; };
+		63A1FD5A1E83A1CF00AEFB12 /* MPTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPTabBarController.m; sourceTree = "<group>"; };
+		63A1FD5C1E83A78900AEFB12 /* MPNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPNavigationController.h; sourceTree = "<group>"; };
+		63A1FD5D1E83A78900AEFB12 /* MPNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPNavigationController.m; sourceTree = "<group>"; };
+		63A1FD5F1E83B35D00AEFB12 /* PrefixHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.h; sourceTree = "<group>"; };
+		63A1FD611E83B44300AEFB12 /* UIView+MExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MExtension.h"; sourceTree = "<group>"; };
+		63A1FD621E83B44300AEFB12 /* UIView+MExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MExtension.m"; sourceTree = "<group>"; };
+		63A1FD671E83BC5600AEFB12 /* MPFeedController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPFeedController.h; sourceTree = "<group>"; };
+		63A1FD681E83BC5600AEFB12 /* MPFeedController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPFeedController.m; sourceTree = "<group>"; };
+		63A1FD6B1E83CF3700AEFB12 /* MPSearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPSearchController.h; sourceTree = "<group>"; };
+		63A1FD6C1E83CF3700AEFB12 /* MPSearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPSearchController.m; sourceTree = "<group>"; };
+		63A1FD6F1E83D11100AEFB12 /* UISearchBar+MAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISearchBar+MAdd.h"; sourceTree = "<group>"; };
+		63A1FD701E83D11100AEFB12 /* UISearchBar+MAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISearchBar+MAdd.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +120,9 @@
 		63A1FD1E1E82D8BE00AEFB12 /* Plime */ = {
 			isa = PBXGroup;
 			children = (
-				63A1FD221E82D8BE00AEFB12 /* AppDelegate.h */,
-				63A1FD231E82D8BE00AEFB12 /* AppDelegate.m */,
-				63A1FD251E82D8BE00AEFB12 /* ViewController.h */,
-				63A1FD261E82D8BE00AEFB12 /* ViewController.m */,
-				63A1FD281E82D8BE00AEFB12 /* Main.storyboard */,
-				63A1FD2B1E82D8BE00AEFB12 /* Assets.xcassets */,
-				63A1FD2D1E82D8BE00AEFB12 /* LaunchScreen.storyboard */,
-				63A1FD301E82D8BE00AEFB12 /* Info.plist */,
+				63A1FD541E839CCD00AEFB12 /* Feed */,
+				63A1FD6A1E83CED300AEFB12 /* Search */,
+				63A1FD521E839C9300AEFB12 /* Main */,
 				63A1FD1F1E82D8BE00AEFB12 /* Supporting Files */,
 			);
 			path = Plime;
@@ -117,6 +131,8 @@
 		63A1FD1F1E82D8BE00AEFB12 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				63A1FD2B1E82D8BE00AEFB12 /* Assets.xcassets */,
+				63A1FD301E82D8BE00AEFB12 /* Info.plist */,
 				63A1FD201E82D8BE00AEFB12 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -138,6 +154,103 @@
 				63A1FD461E82D8BF00AEFB12 /* Info.plist */,
 			);
 			path = PlimeUITests;
+			sourceTree = "<group>";
+		};
+		63A1FD521E839C9300AEFB12 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				63A1FD601E83B3EB00AEFB12 /* UiView+MExtension */,
+				63A1FD581E839D2000AEFB12 /* NavigationBar */,
+				63A1FD571E839D1600AEFB12 /* TabBar */,
+				63A1FD221E82D8BE00AEFB12 /* AppDelegate.h */,
+				63A1FD231E82D8BE00AEFB12 /* AppDelegate.m */,
+				63A1FD251E82D8BE00AEFB12 /* ViewController.h */,
+				63A1FD261E82D8BE00AEFB12 /* ViewController.m */,
+				63A1FD281E82D8BE00AEFB12 /* Main.storyboard */,
+				63A1FD2D1E82D8BE00AEFB12 /* LaunchScreen.storyboard */,
+				63A1FD5F1E83B35D00AEFB12 /* PrefixHeader.h */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		63A1FD531E839C9E00AEFB12 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		63A1FD541E839CCD00AEFB12 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				63A1FD531E839C9E00AEFB12 /* Model */,
+				63A1FD551E839CED00AEFB12 /* View */,
+				63A1FD561E839CFC00AEFB12 /* Controller */,
+			);
+			name = Feed;
+			sourceTree = "<group>";
+		};
+		63A1FD551E839CED00AEFB12 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		63A1FD561E839CFC00AEFB12 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				63A1FD671E83BC5600AEFB12 /* MPFeedController.h */,
+				63A1FD681E83BC5600AEFB12 /* MPFeedController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		63A1FD571E839D1600AEFB12 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				63A1FD591E83A1CF00AEFB12 /* MPTabBarController.h */,
+				63A1FD5A1E83A1CF00AEFB12 /* MPTabBarController.m */,
+			);
+			name = TabBar;
+			sourceTree = "<group>";
+		};
+		63A1FD581E839D2000AEFB12 /* NavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				63A1FD5C1E83A78900AEFB12 /* MPNavigationController.h */,
+				63A1FD5D1E83A78900AEFB12 /* MPNavigationController.m */,
+			);
+			name = NavigationBar;
+			sourceTree = "<group>";
+		};
+		63A1FD601E83B3EB00AEFB12 /* UiView+MExtension */ = {
+			isa = PBXGroup;
+			children = (
+				63A1FD611E83B44300AEFB12 /* UIView+MExtension.h */,
+				63A1FD621E83B44300AEFB12 /* UIView+MExtension.m */,
+			);
+			name = "UiView+MExtension";
+			sourceTree = "<group>";
+		};
+		63A1FD6A1E83CED300AEFB12 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				63A1FD6E1E83D0D000AEFB12 /* UISearchBar+MAdd */,
+				63A1FD6B1E83CF3700AEFB12 /* MPSearchController.h */,
+				63A1FD6C1E83CF3700AEFB12 /* MPSearchController.m */,
+			);
+			name = Search;
+			sourceTree = "<group>";
+		};
+		63A1FD6E1E83D0D000AEFB12 /* UISearchBar+MAdd */ = {
+			isa = PBXGroup;
+			children = (
+				63A1FD6F1E83D11100AEFB12 /* UISearchBar+MAdd.h */,
+				63A1FD701E83D11100AEFB12 /* UISearchBar+MAdd.m */,
+			);
+			name = "UISearchBar+MAdd";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +315,7 @@
 		63A1FD141E82D8BE00AEFB12 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = MP;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = Maskmale;
 				TargetAttributes = {
@@ -273,8 +387,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63A1FD711E83D11100AEFB12 /* UISearchBar+MAdd.m in Sources */,
+				63A1FD5B1E83A1CF00AEFB12 /* MPTabBarController.m in Sources */,
 				63A1FD271E82D8BE00AEFB12 /* ViewController.m in Sources */,
+				63A1FD631E83B44300AEFB12 /* UIView+MExtension.m in Sources */,
 				63A1FD241E82D8BE00AEFB12 /* AppDelegate.m in Sources */,
+				63A1FD5E1E83A78900AEFB12 /* MPNavigationController.m in Sources */,
+				63A1FD691E83BC5600AEFB12 /* MPFeedController.m in Sources */,
+				63A1FD6D1E83CF3700AEFB12 /* MPSearchController.m in Sources */,
 				63A1FD211E82D8BE00AEFB12 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,7 +534,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = Plime/PrefixHeader.h;
 				INFOPLIST_FILE = Plime/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Maskmale-com.github.Plime";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -425,7 +547,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = Plime/PrefixHeader.h;
 				INFOPLIST_FILE = Plime/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Maskmale-com.github.Plime";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -499,6 +623,7 @@
 				63A1FD4B1E82D8BF00AEFB12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		63A1FD4C1E82D8BF00AEFB12 /* Build configuration list for PBXNativeTarget "PlimeTests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +632,7 @@
 				63A1FD4E1E82D8BF00AEFB12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		63A1FD4F1E82D8BF00AEFB12 /* Build configuration list for PBXNativeTarget "PlimeUITests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +641,7 @@
 				63A1FD511E82D8BF00AEFB12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

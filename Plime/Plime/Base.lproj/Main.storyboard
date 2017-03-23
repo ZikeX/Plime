@@ -1,25 +1,280 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="o95-SI-cvX">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Tab Bar Controller-->
+        <scene sceneID="quj-4P-HHE">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tabBarController id="o95-SI-cvX" customClass="MPTabBarController" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="BAP-oI-F3Y">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="AjT-Jh-AB6" kind="relationship" relationship="viewControllers" id="KqZ-Sm-mVV"/>
+                        <segue destination="f4L-3o-ajU" kind="relationship" relationship="viewControllers" id="4n9-Vt-fOz"/>
+                        <segue destination="7X1-fN-vnZ" kind="relationship" relationship="viewControllers" id="IpF-Zg-CkJ"/>
+                        <segue destination="Nvh-6I-3ve" kind="relationship" relationship="viewControllers" id="5es-pt-Rwj"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KYn-2m-djX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-1314" y="180.75"/>
+        </scene>
+        <!--Feed-->
+        <scene sceneID="nQE-sh-CW2">
+            <objects>
+                <navigationController id="AjT-Jh-AB6" customClass="MPNavigationController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Feed" id="JgO-ic-lJ5"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="6rG-NB-RMb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Gbm-rd-x6h" kind="relationship" relationship="rootViewController" id="y3Q-Ht-hLH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5X0-a8-Wh1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="303" y="-367.5"/>
+        </scene>
+        <!--Plime-->
+        <scene sceneID="OGF-H0-gXG">
+            <objects>
+                <viewController id="Gbm-rd-x6h" customClass="MPFeedController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="edf-Fc-cg7"/>
+                        <viewControllerLayoutGuide type="bottom" id="HTo-3S-c4I"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Scs-9z-LpM">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Plime" id="oZr-OY-chS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xIj-wp-KWP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1014" y="-367.5"/>
+        </scene>
+        <!--Like-->
+        <scene sceneID="ZTT-pL-gfS">
+            <objects>
+                <navigationController id="f4L-3o-ajU" customClass="MPNavigationController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Like" id="Z2C-0D-Xku"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="JlV-Ja-qXb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="FvF-pv-h3O" kind="relationship" relationship="rootViewController" id="iJZ-Ki-fMm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3av-7R-Mwu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="303" y="261"/>
+        </scene>
+        <!--Like-->
+        <scene sceneID="Cf2-6p-rnq">
+            <objects>
+                <viewController id="FvF-pv-h3O" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bPF-EA-feG"/>
+                        <viewControllerLayoutGuide type="bottom" id="dfD-Ve-XI6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RCO-L7-AQE">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Like" id="A2P-xd-Can"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jnm-HG-Or7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1014" y="261"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="6lV-sU-Aih">
+            <objects>
+                <viewController storyboardIdentifier="MPSearch" id="Ncz-5Z-Sx6" userLabel="Search" customClass="MPSearchController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IRL-GQ-OT6"/>
+                        <viewControllerLayoutGuide type="bottom" id="iAL-lA-Slo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="big-BC-1zp">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="2u3-BF-67T" userLabel="Custom Search Bar">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="jre-P6-rnD"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="jre-P6-rnD"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="jre-P6-rnD"/>
+                                    </mask>
+                                </variation>
+                            </searchBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w1E-hr-tgp">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="BdX-42-Lcj"/>
+                                    <constraint firstAttribute="height" constant="50" id="Zd9-Hh-Lme"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="&lt;">
+                                    <color key="titleColor" red="0.91764705882352937" green="0.29803921568627451" blue="0.53725490196078429" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="BdX-42-Lcj"/>
+                                        <exclude reference="Zd9-Hh-Lme"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="BdX-42-Lcj"/>
+                                        <include reference="Zd9-Hh-Lme"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="back:" destination="Ncz-5Z-Sx6" eventType="touchUpInside" id="IvO-Er-ZOo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="2u3-BF-67T" secondAttribute="trailing" id="0U2-CQ-t91"/>
+                            <constraint firstItem="2u3-BF-67T" firstAttribute="leading" secondItem="big-BC-1zp" secondAttribute="leading" id="58y-o8-rhV"/>
+                            <constraint firstItem="2u3-BF-67T" firstAttribute="top" secondItem="IRL-GQ-OT6" secondAttribute="bottom" id="XRd-WN-7ds"/>
+                            <constraint firstItem="w1E-hr-tgp" firstAttribute="centerX" secondItem="big-BC-1zp" secondAttribute="centerX" id="blE-or-Ntq"/>
+                            <constraint firstItem="iAL-lA-Slo" firstAttribute="top" secondItem="w1E-hr-tgp" secondAttribute="bottom" constant="20" id="jCA-b9-99x"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="2u3-BF-67T"/>
+                                <exclude reference="w1E-hr-tgp"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="0U2-CQ-t91"/>
+                                <exclude reference="58y-o8-rhV"/>
+                                <exclude reference="XRd-WN-7ds"/>
+                                <exclude reference="blE-or-Ntq"/>
+                                <exclude reference="jCA-b9-99x"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="2u3-BF-67T"/>
+                                <include reference="w1E-hr-tgp"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="0U2-CQ-t91"/>
+                                <include reference="58y-o8-rhV"/>
+                                <include reference="XRd-WN-7ds"/>
+                                <include reference="blE-or-Ntq"/>
+                                <include reference="jCA-b9-99x"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="customSearchBar" destination="2u3-BF-67T" id="22e-oc-Bll"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="diT-JF-QNH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2572.5" y="537"/>
+        </scene>
+        <!--Following-->
+        <scene sceneID="r70-6r-Vqr">
+            <objects>
+                <navigationController id="7X1-fN-vnZ" customClass="MPNavigationController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Following" id="THf-Xh-hOQ"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="q78-od-KPd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="68P-WD-AIT" kind="relationship" relationship="rootViewController" id="Hax-yb-i6v"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hoX-VA-oGv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="303" y="888"/>
+        </scene>
+        <!--Following-->
+        <scene sceneID="q27-gr-IFu">
+            <objects>
+                <viewController id="68P-WD-AIT" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rXB-Bb-qzG"/>
+                        <viewControllerLayoutGuide type="bottom" id="IrW-Hz-1eB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sIi-rV-6dt">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Following" id="ylb-k5-Pzk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dsd-M0-eU2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1014" y="888"/>
+        </scene>
+        <!--Me-->
+        <scene sceneID="7ie-so-MVZ">
+            <objects>
+                <navigationController id="Nvh-6I-3ve" customClass="MPNavigationController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Me" id="cEU-Zc-VDp"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="wIs-xD-UDg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="n9S-Ek-dy5" kind="relationship" relationship="rootViewController" id="B4b-kU-eh0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tq4-Ks-swE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="303" y="1515"/>
+        </scene>
+        <!--Me-->
+        <scene sceneID="0lh-E1-RGq">
+            <objects>
+                <viewController id="n9S-Ek-dy5" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4Ct-U5-72L"/>
+                        <viewControllerLayoutGuide type="bottom" id="S5t-EK-5iF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2Hj-zu-wZG">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Me" id="K91-lN-cgL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w5b-LD-Ch2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1014" y="1515"/>
         </scene>
     </scenes>
 </document>
