@@ -19,12 +19,12 @@
     //  通过 appearance 统一设置 UITabBarController 文字属性
     //  常态
     NSMutableDictionary *attrs = [NSMutableDictionary dictionary];
-    attrs [NSFontAttributeName] = [UIFont systemFontOfSize:14];
-    attrs [NSForegroundColorAttributeName] = [UIColor lightGrayColor];
+    attrs [NSFontAttributeName] = [UIFont systemFontOfSize:12];
+    attrs [NSForegroundColorAttributeName] = MPCharcoalColor;
     //  选中
     NSMutableDictionary *selectedAttrs = [NSMutableDictionary dictionary];
-    selectedAttrs [NSFontAttributeName] = [UIFont systemFontOfSize:14];
-    selectedAttrs [NSForegroundColorAttributeName] = [UIColor whiteColor];
+    selectedAttrs [NSFontAttributeName] = [UIFont systemFontOfSize:12];
+    selectedAttrs [NSForegroundColorAttributeName] = MPPinkColor;
     //  赋值
     UITabBarItem *item = [UITabBarItem appearance];
     [item setTitleTextAttributes:attrs forState:UIControlStateNormal];

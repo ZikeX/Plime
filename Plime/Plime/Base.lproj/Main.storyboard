@@ -14,7 +14,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                        <color key="barTintColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
                     </tabBar>
                     <connections>
                         <segue destination="AjT-Jh-AB6" kind="relationship" relationship="viewControllers" id="KqZ-Sm-mVV"/>
@@ -36,6 +36,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.91764705879999997" green="0.29803921570000003" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="Gbm-rd-x6h" kind="relationship" relationship="rootViewController" id="y3Q-Ht-hLH"/>
@@ -54,6 +57,7 @@
                         <viewControllerLayoutGuide type="bottom" id="HTo-3S-c4I"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Scs-9z-LpM">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="487"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
@@ -73,6 +77,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.91764705879999997" green="0.29803921570000003" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="FvF-pv-h3O" kind="relationship" relationship="rootViewController" id="iJZ-Ki-fMm"/>
@@ -91,6 +98,7 @@
                         <viewControllerLayoutGuide type="bottom" id="dfD-Ve-XI6"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="RCO-L7-AQE">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="487"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -110,6 +118,7 @@
                         <viewControllerLayoutGuide type="bottom" id="iAL-lA-Slo"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="big-BC-1zp">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="2u3-BF-67T" userLabel="Custom Search Bar">
@@ -130,7 +139,7 @@
                                     </mask>
                                 </variation>
                             </searchBar>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w1E-hr-tgp">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w1E-hr-tgp">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <animations/>
                                 <constraints>
@@ -148,6 +157,7 @@
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="35"/>
                                     <mask key="constraints">
                                         <include reference="BdX-42-Lcj"/>
                                         <include reference="Zd9-Hh-Lme"/>
@@ -173,11 +183,11 @@
                                 <exclude reference="w1E-hr-tgp"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="jCA-b9-99x"/>
+                                <exclude reference="blE-or-Ntq"/>
                                 <exclude reference="0U2-CQ-t91"/>
                                 <exclude reference="58y-o8-rhV"/>
                                 <exclude reference="XRd-WN-7ds"/>
-                                <exclude reference="blE-or-Ntq"/>
-                                <exclude reference="jCA-b9-99x"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -186,11 +196,11 @@
                                 <include reference="w1E-hr-tgp"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="jCA-b9-99x"/>
+                                <include reference="blE-or-Ntq"/>
                                 <include reference="0U2-CQ-t91"/>
                                 <include reference="58y-o8-rhV"/>
                                 <include reference="XRd-WN-7ds"/>
-                                <include reference="blE-or-Ntq"/>
-                                <include reference="jCA-b9-99x"/>
                             </mask>
                         </variation>
                     </view>
@@ -211,6 +221,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.91764705879999997" green="0.29803921570000003" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="68P-WD-AIT" kind="relationship" relationship="rootViewController" id="Hax-yb-i6v"/>
@@ -229,6 +242,7 @@
                         <viewControllerLayoutGuide type="bottom" id="IrW-Hz-1eB"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="sIi-rV-6dt">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="487"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -239,15 +253,18 @@
             </objects>
             <point key="canvasLocation" x="1014" y="888"/>
         </scene>
-        <!--Me-->
+        <!--More-->
         <scene sceneID="7ie-so-MVZ">
             <objects>
                 <navigationController id="Nvh-6I-3ve" customClass="MPNavigationController" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Me" id="cEU-Zc-VDp"/>
+                    <tabBarItem key="tabBarItem" title="More" id="cEU-Zc-VDp"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="wIs-xD-UDg">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.91764705879999997" green="0.29803921570000003" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="n9S-Ek-dy5" kind="relationship" relationship="rootViewController" id="B4b-kU-eh0"/>
@@ -257,7 +274,7 @@
             </objects>
             <point key="canvasLocation" x="303" y="1515"/>
         </scene>
-        <!--Me-->
+        <!--More-->
         <scene sceneID="0lh-E1-RGq">
             <objects>
                 <viewController id="n9S-Ek-dy5" sceneMemberID="viewController">
@@ -266,11 +283,12 @@
                         <viewControllerLayoutGuide type="bottom" id="S5t-EK-5iF"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="2Hj-zu-wZG">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="487"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Me" id="K91-lN-cgL"/>
+                    <navigationItem key="navigationItem" title="More" id="K91-lN-cgL"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w5b-LD-Ch2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

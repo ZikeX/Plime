@@ -16,9 +16,10 @@
 
 +(void)initialize{
     UINavigationBar *bar = [UINavigationBar appearanceWhenContainedIn:[self class], nil];
-    [bar setBackgroundImage:[UIImage imageNamed:@"MP_Navigationbar_bg"] forBarMetrics:UIBarMetricsDefault];
+    [bar setBackgroundImage:[UIImage imageNamed:@"MP_NavBar_bg"] forBarMetrics:UIBarMetricsDefault];
     NSMutableDictionary *title = [NSMutableDictionary dictionary];
-    title [NSForegroundColorAttributeName] = [UIColor whiteColor];
+    
+    title [NSForegroundColorAttributeName] = MPCharcoalColor;
     [bar setTitleTextAttributes:title];
 }
 
@@ -41,12 +42,14 @@
 //        [lButton setImage:[UIImage imageNamed:@"imageName"] forState:UIControlStateNormal];
 //        [lButton setImage:[UIImage imageNamed:@"imageName_prs"] forState:UIControlStateHighlighted];
         //  设置按钮尺寸
+        UIColor *CharcoalColor = MPCharcoalColor;
+        UIColor *PinkColor = MPPinkColor;
         lButton.size = CGSizeMake(70, 30);
         lButton.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
         lButton.contentEdgeInsets = UIEdgeInsetsMake(0, -10, 0, 0);
-        [lButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-//        UIColor *backColor = MPGlobalBg(129, 17, 10) ;
-        [lButton setTitleColor:[UIColor lightGrayColor] forState:UIControlStateHighlighted];
+        
+        [lButton setTitleColor:PinkColor forState:UIControlStateNormal];
+        [lButton setTitleColor:CharcoalColor forState:UIControlStateHighlighted];
         [lButton addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
         viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:lButton];
         //  隐藏TabBar
