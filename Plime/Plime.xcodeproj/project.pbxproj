@@ -22,6 +22,7 @@
 		63A1FD711E83D11100AEFB12 /* UISearchBar+MAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A1FD701E83D11100AEFB12 /* UISearchBar+MAdd.m */; settings = {ASSET_TAGS = (); }; };
 		63A1FD751E85313500AEFB12 /* MPWaterflowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A1FD741E85313500AEFB12 /* MPWaterflowLayout.m */; settings = {ASSET_TAGS = (); }; };
 		63A1FD771E857B9D00AEFB12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63A1FD761E857B9D00AEFB12 /* Assets.xcassets */; settings = {ASSET_TAGS = (); }; };
+		A125EA739849C671927CB6A4 /* Pods_Plime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B7DD7E8AC782FC9B09ADF70 /* Pods_Plime.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,9 @@
 		63A1FD731E85313500AEFB12 /* MPWaterflowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPWaterflowLayout.h; sourceTree = "<group>"; };
 		63A1FD741E85313500AEFB12 /* MPWaterflowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPWaterflowLayout.m; sourceTree = "<group>"; };
 		63A1FD761E857B9D00AEFB12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		689730D10F6E5293B37480FF /* Pods-Plime.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Plime.release.xcconfig"; path = "Pods/Target Support Files/Pods-Plime/Pods-Plime.release.xcconfig"; sourceTree = "<group>"; };
+		6B7DD7E8AC782FC9B09ADF70 /* Pods_Plime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Plime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		860151251F4B76AEA09BA337 /* Pods-Plime.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Plime.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Plime/Pods-Plime.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A125EA739849C671927CB6A4 /* Pods_Plime.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +112,8 @@
 				63A1FD381E82D8BE00AEFB12 /* PlimeTests */,
 				63A1FD431E82D8BF00AEFB12 /* PlimeUITests */,
 				63A1FD1D1E82D8BE00AEFB12 /* Products */,
+				A7990F750A3925566FD01D7F /* Pods */,
+				EA0494040B7F988C657D38C2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -266,6 +273,23 @@
 			name = WaterflowLayout;
 			sourceTree = "<group>";
 		};
+		A7990F750A3925566FD01D7F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				860151251F4B76AEA09BA337 /* Pods-Plime.debug.xcconfig */,
+				689730D10F6E5293B37480FF /* Pods-Plime.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EA0494040B7F988C657D38C2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6B7DD7E8AC782FC9B09ADF70 /* Pods_Plime.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -273,9 +297,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 63A1FD491E82D8BF00AEFB12 /* Build configuration list for PBXNativeTarget "Plime" */;
 			buildPhases = (
+				6F684A28107C87B44F20872E /* [CP] Check Pods Manifest.lock */,
 				63A1FD181E82D8BE00AEFB12 /* Sources */,
 				63A1FD191E82D8BE00AEFB12 /* Frameworks */,
 				63A1FD1A1E82D8BE00AEFB12 /* Resources */,
+				818F3B16BB6BEAFA58DD45C8 /* [CP] Embed Pods Frameworks */,
+				D52F5E1320471D669119EBA6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -394,6 +421,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6F684A28107C87B44F20872E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		818F3B16BB6BEAFA58DD45C8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Plime/Pods-Plime-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D52F5E1320471D669119EBA6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Plime/Pods-Plime-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		63A1FD181E82D8BE00AEFB12 /* Sources */ = {
@@ -546,6 +621,7 @@
 		};
 		63A1FD4A1E82D8BF00AEFB12 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 860151251F4B76AEA09BA337 /* Pods-Plime.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = Plime/PrefixHeader.h;
@@ -554,11 +630,13 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Maskmale-com.github.Plime";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = " ${SRCROOT}/**";
 			};
 			name = Debug;
 		};
 		63A1FD4B1E82D8BF00AEFB12 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 689730D10F6E5293B37480FF /* Pods-Plime.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = Plime/PrefixHeader.h;
@@ -567,6 +645,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Maskmale-com.github.Plime";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = " ${SRCROOT}/**";
 			};
 			name = Release;
 		};
